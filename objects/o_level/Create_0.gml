@@ -20,7 +20,6 @@ var _steps = 400;
 var _player_start_x = _controller_x * CELL_WIDTH + CELL_WIDTH/2;
 var _player_start_y = _controller_y * CELL_HEIGHT + CELL_HEIGHT/2;
 instance_create_layer(_player_start_x,_player_start_y,"Instances",o_player);
-
 var _direction_change_odds = 1;
 
 repeat (_steps) {
@@ -53,7 +52,6 @@ for (var _y = 1; _y < height_-1; _y++) {
 			var _west_tile = grid_[# _x-1, _y] == VOID;
 			var _east_tile = grid_[# _x+1, _y] == VOID;
 			var _south_tile = grid_[# _x, _y+1] == VOID;
-			
 			var _tile_index = NORTH*_north_tile + WEST*_west_tile + EAST*_east_tile + SOUTH*_south_tile +1;
 			if (_tile_index == 1) {
 				grid_[# _x, _y] = FLOOR 
@@ -69,10 +67,11 @@ for (var _y = 1; _y < height_-1; _y++) {
 			var _west_tile = grid_[# _x-1, _y] == VOID;
 			var _east_tile = grid_[# _x+1, _y] == VOID;
 			var _south_tile = grid_[# _x, _y+1] == VOID;
-			
 			var _tile_index = NORTH*_north_tile + WEST*_west_tile + EAST*_east_tile + SOUTH*_south_tile +1;
 			tilemap_set(_wall_map_id, _tile_index, _x, _y);
 		}
 	}
 }
+
+alarm[0]=2;
 
