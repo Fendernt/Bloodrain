@@ -231,6 +231,14 @@
             }
         },
         {
+            "Key": "515d9c22-5f6e-4116-b952-0e8e8f621ae7",
+            "Value": {
+                "id": "c4602219-55de-4d33-9ab0-2dce93b92935",
+                "resourcePath": "objects\\o_enemy_spawner\\o_enemy_spawner.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "522d9a98-2899-4057-9628-053c8f8ec50e",
             "Value": {
                 "id": "d3a66e75-4404-4a61-91c3-7880ca0a4b65",
@@ -467,6 +475,14 @@
             "Value": {
                 "id": "a04b0e46-74b4-4654-961e-2f7ab4041cb8",
                 "resourcePath": "views\\98af8b89-f48a-47d6-babe-0e9585334f01.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a1eea66b-bbb7-4e2a-83cf-bed692a1f6d7",
+            "Value": {
+                "id": "3a7d8902-b4a4-46ab-88c5-4dd77c0b2e44",
+                "resourcePath": "views\\a1eea66b-bbb7-4e2a-83cf-bed692a1f6d7.yy",
                 "resourceType": "GMFolder"
             }
         },

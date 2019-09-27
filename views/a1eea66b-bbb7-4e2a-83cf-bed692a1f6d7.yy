@@ -1,0 +1,14 @@
+{
+    "id": "a1eea66b-bbb7-4e2a-83cf-bed692a1f6d7",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "a1eea66b-bbb7-4e2a-83cf-bed692a1f6d7",
+    "children": [
+        "e7b57554-944e-4cbd-9f4a-2d1d33606cb4",
+        "515d9c22-5f6e-4116-b952-0e8e8f621ae7"
+    ],
+    "filterType": "GMObject",
+    "folderName": "Enemies",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}
