@@ -1,5 +1,7 @@
 /// @description 
 //Initialize path
+spawned=false;
 path = path_add();
-spd = CELL_SIZE;
-alarm[0] = room_speed;
+image_speed = 0.5;
+
+hp=3;
