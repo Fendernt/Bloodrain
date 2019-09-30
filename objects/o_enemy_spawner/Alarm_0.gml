@@ -1,6 +1,8 @@
 /// @description 
 randomize();
+alarm[0]=respawntime;
 
+if(global.paused == true) exit;
 instance_create_layer(random(room_width),random(room_height),"Instances",obj_enemy);
 /*
 with(newinst) {
@@ -24,5 +26,3 @@ with(newinst) {
 */
 
 
-
-alarm[0] = respawntime;

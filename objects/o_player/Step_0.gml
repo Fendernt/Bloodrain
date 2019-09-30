@@ -3,6 +3,9 @@
 var _x_input = keyboard_check(vk_right) - keyboard_check(vk_left) || keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var _y_input = keyboard_check(vk_down) - keyboard_check(vk_up) || keyboard_check(ord("S")) - keyboard_check(ord("W"));
 */
+
+if(global.paused == true) exit;
+
 #region Movement
 
 var _x_input = keyboard_check(ord("D")) - keyboard_check(ord("A"));

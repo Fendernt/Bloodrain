@@ -1,4 +1,5 @@
 if not instance_exists(target_) exit;
+if(global.paused == true) exit;
 x = lerp(x, target_.x, .1);
 y = lerp(y, target_.y, .1);
 

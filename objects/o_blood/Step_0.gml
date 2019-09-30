@@ -1,5 +1,5 @@
 /// @description 
-
+if(global.paused == true) exit;
 if(image_index!=7) exit;
 
 if(fadeout=true){

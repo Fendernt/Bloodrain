@@ -5,6 +5,9 @@ max_speed_ = 2;
 acceleration_ = 0.5;
 global.points=0;
 
+create_advanced_healthbar()
+
+hp=5;
 
 instance_create_layer(x,y,"Instances",o_camera);
 instance_create_layer(x,y,"HUD",o_wand);

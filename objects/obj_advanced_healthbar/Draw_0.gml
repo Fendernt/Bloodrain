@@ -1,0 +1,1 @@
+draw_advanced_healthbar(x,y,x+400,y+80,c_black,c_red,c_lime,0,true,true,c_yellow);

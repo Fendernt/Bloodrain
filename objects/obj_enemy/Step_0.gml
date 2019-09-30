@@ -55,13 +55,34 @@ if(collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-13,o_spell,0,0)
 		
 	}
 }
+
+if(collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-13,o_player,0,0)&&Attacked=false){
+	Attacked=true;
+	alarm[1] = attackCooldown;
+	player = collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-13,o_player,0,0);
+	with(player){
+		hp-=1;
+		damage_advanced_healthbar(20);
+		instance_create_layer(x,y,"Instances",o_blood);
+	}
+
+	
+}
+
+
 #endregion
 
 
 #region Movement
 
+if(global.paused) {
+	image_speed=0;
+} else {
+	image_speed=.5;
+}
+
 //Pathfinding (sucks a bit)
-if(distance_to_object(o_player) <= 200){
+if(distance_to_object(o_player) <= 200 && global.paused=false){
 if(!path_exists(path)) {
 	path = path_add();
 }

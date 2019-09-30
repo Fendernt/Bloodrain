@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "1c275398-708a-4ff5-ad0a-c82ff5aa8b80",
+            "Value": {
+                "id": "318bf84b-c3a0-4b2a-9db2-13cc40834323",
+                "resourcePath": "scripts\\draw_advanced_healthbar\\draw_advanced_healthbar.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1f8fe6cb-b093-459b-914b-310275793c84",
             "Value": {
                 "id": "ae91c685-5a25-4d47-a037-947d8434c1da",
@@ -156,6 +164,14 @@
                 "id": "2b76a9cf-f4e4-438c-8eae-cb3d49c253a4",
                 "resourcePath": "sprites\\sp_pistol_r\\sp_pistol_r.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2c32405c-41b3-468c-a062-fd7be2e82c12",
+            "Value": {
+                "id": "21f7b5e6-6eb0-4cff-a816-c77c1bb840be",
+                "resourcePath": "scripts\\heal_advanced_healthbar\\heal_advanced_healthbar.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -251,6 +267,14 @@
             "Value": {
                 "id": "d3a66e75-4404-4a61-91c3-7880ca0a4b65",
                 "resourcePath": "scripts\\smooth_approach\\smooth_approach.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "52b83953-4608-4a52-ae6e-350299fc8ecc",
+            "Value": {
+                "id": "fd5ee1ee-d522-4c0d-a07c-bccaba3b74b6",
+                "resourcePath": "scripts\\create_advanced_healthbar\\create_advanced_healthbar.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -460,6 +484,14 @@
                 "id": "bd191704-1fed-4aec-97e9-eb5d3cc9b911",
                 "resourcePath": "scripts\\ds_list_random\\ds_list_random.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8ea132e4-4fce-443f-88dc-d124c5a1d0fa",
+            "Value": {
+                "id": "b3e04d25-9b6f-4683-8689-5a45abb07ed2",
+                "resourcePath": "objects\\obj_advanced_healthbar\\obj_advanced_healthbar.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -727,6 +759,14 @@
             }
         },
         {
+            "Key": "f02842a1-d00b-4a26-a1ab-71ce1494993e",
+            "Value": {
+                "id": "6b5d793d-ebc6-4c54-93c3-033743ce44f5",
+                "resourcePath": "scripts\\damage_advanced_healthbar\\damage_advanced_healthbar.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f3e3ffae-b316-4d3b-92e6-16d70c828529",
             "Value": {
                 "id": "e81640f5-bbc5-43dc-83d6-29bca8bf5bba",
@@ -802,7 +842,11 @@
         "5f1d03f4-e79b-402b-8101-deafc8070ce6",
         "a67b13c5-99ae-49b3-90a4-ef6b8ebbc513",
         "a9750e30-ccee-475e-8b6c-e5ece6d63ec5",
-        "fa4d64a3-a76f-4795-92e1-d8c4caa97857"
+        "fa4d64a3-a76f-4795-92e1-d8c4caa97857",
+        "1c275398-708a-4ff5-ad0a-c82ff5aa8b80",
+        "f02842a1-d00b-4a26-a1ab-71ce1494993e",
+        "52b83953-4608-4a52-ae6e-350299fc8ecc",
+        "2c32405c-41b3-468c-a062-fd7be2e82c12"
     ],
     "tutorial": ""
 }

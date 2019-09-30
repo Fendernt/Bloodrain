@@ -1,0 +1,1 @@
+damage_advanced_healthbar(10);

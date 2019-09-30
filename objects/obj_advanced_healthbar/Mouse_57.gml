@@ -1,0 +1,1 @@
+heal_advanced_healthbar(10);
