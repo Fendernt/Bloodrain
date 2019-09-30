@@ -10,7 +10,6 @@ grid_ = ds_grid_create(width_,height_);
 ds_grid_set_region(grid_,0,0,width_,height_,VOID);
 
 
-
 //Create the controller
 var _controller_x = width_ div 2
 var _controller_y = height_ div 2

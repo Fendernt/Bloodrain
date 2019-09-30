@@ -34,6 +34,7 @@ if(spawned=false){
             y = random(room_height);
 	} else {
 		spawned=true;	
+		visible=true;
 	}
 }
 
@@ -46,11 +47,12 @@ if(collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-13,o_spell,0,0)
 	
 	bullet = collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-13,o_spell,0,0);
 	with(bullet) instance_destroy();
-	
+	instance_create_layer(x,y,"Instances",o_blood);
 
 	if(hp<=0){
 		instance_destroy();	
 		global.points +=100;
+		
 	}
 }
 #endregion
