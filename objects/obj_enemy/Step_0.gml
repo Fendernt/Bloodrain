@@ -1,4 +1,5 @@
 
+
 #region Spawning
 
 if(spawned=false){
@@ -43,18 +44,18 @@ if(collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-12,o_spell,0,0)
 	
 	var bullet = collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-13,o_spell,0,0);
 	with(bullet) instance_destroy();
-	instance_create_layer(x,y,"Instances",o_blood);
+	instance_create_layer(x,y,"blood",o_blood);
 	
 }
 
-if(collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-13,o_player,0,0)&&Attacked=false){
+if(collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-13,o_player,0,0)&&Attacked=false&&!global.paused){
 	Attacked=true;
 	alarm[1] = attackCooldown;
 	player = collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-13,o_player,0,0);
 	with(player){
 		hp-=1;
 		damage_advanced_healthbar(20);
-		instance_create_layer(x,y,"Instances",o_blood);
+		instance_create_layer(x,y,"blood",o_blood);
 	}
 
 	

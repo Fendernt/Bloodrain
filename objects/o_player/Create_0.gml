@@ -4,6 +4,7 @@ y_speed_ = 0;
 max_speed_ = 2;
 acceleration_ = 0.5;
 global.points=0;
+dead=false;
 
 create_advanced_healthbar()
 

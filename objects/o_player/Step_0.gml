@@ -4,7 +4,19 @@ var _x_input = keyboard_check(vk_right) - keyboard_check(vk_left) || keyboard_ch
 var _y_input = keyboard_check(vk_down) - keyboard_check(vk_up) || keyboard_check(ord("S")) - keyboard_check(ord("W"));
 */
 
+if(global.paused=false){
+	image_speed=1;	
+} else if (global.paused=true){
+	image_speed=0;	
+}
+
+
 if(global.paused == true) exit;
+
+if(hp<=0 && !dead){
+	dead=true;	
+	instance_create_layer(room_width/2,room_height/2,"gameover",obj_gameover);
+}
 
 #region Movement
 
