@@ -1,32 +1,5 @@
 
 #region Spawning
-/*
-//Checking if its not spawning inside a wall
-while(collision_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,o_collidable,1,1)&&spawned=false){
-	
-	x = random_range(0,room_width)
-	y = random_range(0,room_height)
-}
-
-
-if(!collision_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,o_collidable,1,1)&&spawned=false){
-	spawned=true;	
-}
-
-while (true) {
-    done = true;
-    with(o_collidable) {
-        if (point_distance(other.x, other.y, x, y) < 10) {
-            other.x = random(room_width);
-            other.y = random(room_height);
-            done = false;
-        } 
-    }
-    if (done) {
-        break;
-    }
-}
-*/
 
 if(spawned=false){
 	if(grid_place_meeting(self,o_level.grid_)){
@@ -42,18 +15,36 @@ if(spawned=false){
 
 
 #region Damage
-if(collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-13,o_spell,0,0)){
+if(collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-12,o_spell,0,0)){
 	hp-=1;
+	if(collision_rectangle(bbox_left,bbox_top-12,bbox_right,bbox_top-17,o_spell,0,0) && !headless){
+		headless=true;	
+	}
 	
-	bullet = collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-13,o_spell,0,0);
-	with(bullet) instance_destroy();
-	instance_create_layer(x,y,"Instances",o_blood);
-
+	
 	if(hp<=0){
 		instance_destroy();	
 		global.points +=100;
+	} else if (hp=1 && !headless){
+		sprite_index = spr_enemy_blood;	
+	} else if (headless && !isheadless){
+		isheadless=true;
+		sprite_index = spr_enemy_headless;	
+		var bullet = collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-13,o_spell,0,0);
+		head = instance_create_layer(x,y-5,"Instances",o_enemy_head);
+		with(head) {
+			direction = bullet.direction;
+			speed=.7;;
+			image_angle = other.image_angle;
+		}
+		
 		
 	}
+	
+	var bullet = collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-13,o_spell,0,0);
+	with(bullet) instance_destroy();
+	instance_create_layer(x,y,"Instances",o_blood);
+	
 }
 
 if(collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-13,o_player,0,0)&&Attacked=false){

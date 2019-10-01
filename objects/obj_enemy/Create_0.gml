@@ -8,6 +8,8 @@ visible=false;
 depth = -1;
 attackCooldown = room_speed*2;
 Attacked=false;
+headless=false;
+isheadless=false;
 
 hp=3;
 respawntime=room_speed*3;
