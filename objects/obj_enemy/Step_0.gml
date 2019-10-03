@@ -16,9 +16,29 @@ if(spawned=false){
 
 
 #region Damage
+
+if(collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-12,o_explosion,0,0) && exploded=false){
+	hp-=2;
+	exploded=true;
+	alarm[2]=80;
+	if(hp<=0){
+		instance_destroy();	
+		global.points +=100;
+	} else if (hp=1 && !headless){
+		sprite_index = spr_enemy_blood;	
+	}
+	
+}
+
+
 if(collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-12,o_spell,0,0)){
-	hp-=1;
-	if(collision_rectangle(bbox_left,bbox_top-12,bbox_right,bbox_top-17,o_spell,0,0) && !headless){
+	if(collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-12,o_spell3,0,0)){
+		instance_create_layer(x,y,"Instances",o_explosion);
+	}
+	
+	
+	hp-=damage;
+	if(collision_rectangle(bbox_left,bbox_top-14,bbox_right,bbox_top-7,o_spell,0,0) && !headless){
 		headless=true;	
 	}
 	

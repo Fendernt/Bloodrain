@@ -59,6 +59,7 @@ x += x_speed_;
 
 if x_speed_ > 0 {
 	image_xscale =1;
+	layer_background_speed(bk,1.3);
 	if grid_place_meeting(self,o_level.grid_){
 		x = bbox_right&~(CELL_WIDTH-1);
 		x -= bbox_right-x;
@@ -66,11 +67,14 @@ if x_speed_ > 0 {
 	}
 } else if x_speed_ < 0 {
 	image_xscale = -1;
+	layer_background_speed(bk,0.7);
 	if grid_place_meeting(self,o_level.grid_){
 		x = bbox_left&~(CELL_WIDTH-1);
 		x += CELL_WIDTH+x-bbox_left;
 		x_speed_ = 0;
 	}
+} else if x_speed_ = 0 {
+	layer_background_speed(bk,1);	
 }
 
 y += y_speed_;

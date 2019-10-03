@@ -6,6 +6,8 @@ acceleration_ = 0.5;
 global.points=0;
 dead=false;
 
+bk = layer_background_get_id("Fog");
+
 create_advanced_healthbar()
 
 hp=5;

@@ -55,11 +55,27 @@
             }
         },
         {
+            "Key": "0dc9dba5-7237-4e46-a808-98412f8772c4",
+            "Value": {
+                "id": "700c1b92-5616-4e28-b864-d4eda9cc630e",
+                "resourcePath": "views\\0dc9dba5-7237-4e46-a808-98412f8772c4.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "0ebdc2ab-660a-445c-b699-da77078189d9",
             "Value": {
                 "id": "64567705-5393-4505-94a7-5b34f272cc88",
                 "resourcePath": "views\\0ebdc2ab-660a-445c-b699-da77078189d9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "0ef10acb-d121-4422-818d-736b154b5d1f",
+            "Value": {
+                "id": "b9430acd-1980-4530-85cc-a3b3da6d9c40",
+                "resourcePath": "sprites\\spr_fog3\\spr_fog3.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -76,6 +92,14 @@
                 "id": "a6864f6c-81bc-48b7-a696-91ec8a8c3c97",
                 "resourcePath": "sprites\\spr_enemy_headless\\spr_enemy_headless.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "148adb39-b076-47ff-88eb-99dbe3bcd95b",
+            "Value": {
+                "id": "01372b4c-7afc-48c8-9e2e-fe42915d3aa0",
+                "resourcePath": "extensions\\Realistic_Explosions_Pack\\Realistic_Explosions_Pack.yy",
+                "resourceType": "GMExtension"
             }
         },
         {
@@ -108,6 +132,14 @@
                 "id": "4d88ac94-4e99-4850-be57-54ab1749be16",
                 "resourcePath": "scripts\\mouse_over\\mouse_over.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "17e4c234-4bf4-41e1-8509-4deaeadae618",
+            "Value": {
+                "id": "294d3599-8d89-441d-aa82-61d7efdec745",
+                "resourcePath": "views\\17e4c234-4bf4-41e1-8509-4deaeadae618.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -175,6 +207,14 @@
             }
         },
         {
+            "Key": "2588265b-76a7-47b4-8594-111c52207da5",
+            "Value": {
+                "id": "4493fee3-0a97-4bbc-b3af-62387c03b29f",
+                "resourcePath": "objects\\o_mouse\\o_mouse.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "289c2577-247a-48fc-add9-550968c900a5",
             "Value": {
                 "id": "15de1dc4-321d-4ad8-882f-e57670039985",
@@ -187,6 +227,14 @@
             "Value": {
                 "id": "2b76a9cf-f4e4-438c-8eae-cb3d49c253a4",
                 "resourcePath": "sprites\\sp_pistol_r\\sp_pistol_r.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2aad4d8a-d45f-45d1-8d20-87662dedb414",
+            "Value": {
+                "id": "07b59c1c-9223-4657-8238-a4289884d3d3",
+                "resourcePath": "sprites\\s_spell1\\s_spell1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -220,6 +268,14 @@
                 "id": "1079f2a6-a1c7-487e-9629-db43c68385fd",
                 "resourcePath": "sprites\\s_player\\s_player.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "32770a74-40eb-441a-9829-5524f44527aa",
+            "Value": {
+                "id": "4f4779b3-cb7e-49a9-8792-ead490e0d5cb",
+                "resourcePath": "objects\\o_spell3\\o_spell3.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -279,6 +335,14 @@
             }
         },
         {
+            "Key": "4b86f736-87cb-40fb-b5ea-fda050f743cd",
+            "Value": {
+                "id": "ef782bdf-abfa-4b95-b2fe-b38fb9f34587",
+                "resourcePath": "sprites\\o_wand4\\o_wand4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4cb2d0ef-7690-4b6a-813c-ab8ba3fa84a0",
             "Value": {
                 "id": "30bc5ead-2ec8-427e-a513-29d871f3d606",
@@ -327,6 +391,14 @@
             }
         },
         {
+            "Key": "5389d48c-a91f-44d0-992a-65ede58ea7ad",
+            "Value": {
+                "id": "348adfb1-37cf-4157-bffc-d49ee9acd1db",
+                "resourcePath": "sprites\\s_mouse\\s_mouse.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "557278a1-ae08-40be-b2d8-155f92fd0898",
             "Value": {
                 "id": "bfd4b6ea-4696-456f-8d76-60797d93fe6b",
@@ -359,11 +431,27 @@
             }
         },
         {
+            "Key": "5994799a-547e-4721-b0b1-bdd6efbe7442",
+            "Value": {
+                "id": "ed799e30-9504-4e30-aa43-a223005743e2",
+                "resourcePath": "sprites\\s_spell3\\s_spell3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5a1ee94d-ea27-499e-99f1-fa0e211ca7c1",
             "Value": {
                 "id": "0d563bb5-b855-4723-aac0-a44cb8081308",
                 "resourcePath": "views\\5a1ee94d-ea27-499e-99f1-fa0e211ca7c1.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5aab291f-9ed7-417d-80be-31314a7369fe",
+            "Value": {
+                "id": "c8be42fa-1d3a-47c4-94b0-c0c93abcab85",
+                "resourcePath": "sprites\\spr_fog2\\spr_fog2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -503,10 +591,26 @@
             }
         },
         {
+            "Key": "7abd16ad-c81c-4346-9cd5-695e26fd3355",
+            "Value": {
+                "id": "64ffcf8f-c6eb-469c-b841-54e9abc31a69",
+                "resourcePath": "sprites\\o_wand5\\o_wand5.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7b17d1e9-bdb9-4e1a-aaed-1b4f97ff3518",
             "Value": {
                 "id": "73bce58f-1f2f-45d4-9085-e304879d6fa7",
                 "resourcePath": "objects\\o_player\\o_player.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7dd8e1bf-ab3b-4156-8015-0087f5d41cdb",
+            "Value": {
+                "id": "cf68aab7-bb1f-4cf5-99fd-a6eda99acd41",
+                "resourcePath": "objects\\o_spell4\\o_spell4.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -591,6 +695,14 @@
             }
         },
         {
+            "Key": "9d213942-5614-40d9-97e2-c19c34bc133b",
+            "Value": {
+                "id": "37288f28-75d5-4fe2-9b51-e2615851afd5",
+                "resourcePath": "sprites\\spr_fog4\\spr_fog4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a1eea66b-bbb7-4e2a-83cf-bed692a1f6d7",
             "Value": {
                 "id": "3a7d8902-b4a4-46ab-88c5-4dd77c0b2e44",
@@ -647,6 +759,14 @@
             }
         },
         {
+            "Key": "ad5acd5c-f57d-4552-b9f6-e3e24d0444f3",
+            "Value": {
+                "id": "91ec39ad-7042-4f69-8288-6cf8224938cd",
+                "resourcePath": "sprites\\s_spell4\\s_spell4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ae12a563-f256-4b7c-8120-55c32514f506",
             "Value": {
                 "id": "c3a95d34-ffdf-4930-9b70-0c7edf47125a",
@@ -679,6 +799,14 @@
             }
         },
         {
+            "Key": "b7d92317-83d2-4949-9cb8-5269c0083fab",
+            "Value": {
+                "id": "8d0508ee-fd15-4e41-9e08-acce1e6a6552",
+                "resourcePath": "objects\\o_explosion\\o_explosion.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b97e3110-ed33-4ab7-85e2-7fa2e7605b87",
             "Value": {
                 "id": "3bd6e73c-7380-43e4-ba88-1981719678b5",
@@ -700,6 +828,14 @@
                 "id": "538e050c-6bcb-4c52-9fba-cb844144c547",
                 "resourcePath": "views\\c18bb3a3-7976-4a45-8b93-79a0164828b9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c5b81f17-db53-4020-876b-702f8e72b931",
+            "Value": {
+                "id": "11d39b04-7987-4826-9298-812f27b52657",
+                "resourcePath": "sprites\\o_wand3\\o_wand3.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -783,6 +919,14 @@
             }
         },
         {
+            "Key": "d63946f3-c393-4ee0-b53d-933a5c56270f",
+            "Value": {
+                "id": "01666049-d61a-4e5a-8c69-38fb62c1bb02",
+                "resourcePath": "objects\\o_spell2\\o_spell2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d8156951-8437-446a-8d4c-81cf413470c7",
             "Value": {
                 "id": "f72e0e4d-be5b-4d8c-b5ec-d02ecc05a2f0",
@@ -803,6 +947,14 @@
             "Value": {
                 "id": "9ce5763d-e5a4-4a44-8e8e-fb3bf2b166dc",
                 "resourcePath": "views\\dc16dafa-6988-411e-a564-f0fa690b54b2.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "dff98ab5-2638-4352-8c46-535d5383c8a8",
+            "Value": {
+                "id": "a7ed804b-1358-46f2-b198-46980cb473a7",
+                "resourcePath": "views\\dff98ab5-2638-4352-8c46-535d5383c8a8.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -900,6 +1052,14 @@
                 "id": "b08dc415-a961-40b6-bc04-0e760695d338",
                 "resourcePath": "scripts\\angle_approach\\angle_approach.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "fccdfd56-9719-436f-8166-364c7515393d",
+            "Value": {
+                "id": "8022e746-ea7e-4b5f-ac56-c354b24a7d18",
+                "resourcePath": "sprites\\s_explosion\\s_explosion.yy",
+                "resourceType": "GMSprite"
             }
         }
     ],

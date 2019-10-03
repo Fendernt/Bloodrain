@@ -1,11 +1,13 @@
 /// @description 
 
 
-if(mana<100 && manaRegen = true){
-	mana+=10;
+if(mana<maxmana && manaRegen = true){
+	mana+=manaregenamount;
 	heal_advanced_healthbar(10);
-} else if (mana>=100){
+} else if (mana>=maxmana){
 	manaRegen=false;	
+} else if (mana > maxmana && mana < maxmana-manaregenamount){
+	mana=maxmana;	
 }
 
 alarm[0]=40;
