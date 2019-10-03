@@ -7,7 +7,7 @@ global.weaponwheel=true;
 image_xscale = 0.8;
 image_yscale = 0.8;
 
-top=false;
+top=true;
 bottom=false;
 right=false;
 left=false; 

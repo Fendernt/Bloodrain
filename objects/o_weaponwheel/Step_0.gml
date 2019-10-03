@@ -48,7 +48,7 @@ if(visible) {
 if(top){
 	image_index=1;
 	global.weapon = 0;
-	if(instance_exists(obj_enemy)) obj_enemy.damage = 1;
+	if(instance_exists(obj_enemy)) obj_enemy.damage = 1.5;
 } else if (right) {
 	image_index=2;
 	global.weapon = 1;

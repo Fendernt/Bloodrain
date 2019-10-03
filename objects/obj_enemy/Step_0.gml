@@ -3,7 +3,7 @@
 #region Spawning
 
 if(spawned=false){
-	if(grid_place_meeting(self,o_level.grid_)){
+	if(grid_place_meeting(self,o_level.grid_) || place_meeting(x,y,o_player)){
 			x = random(room_width);
             y = random(room_height);
 	} else {
@@ -24,7 +24,7 @@ if(collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-12,o_explosion,
 	if(hp<=0){
 		instance_destroy();	
 		global.points +=100;
-	} else if (hp=1 && !headless){
+	} else if (hp<=2 && !headless){
 		sprite_index = spr_enemy_blood;	
 	}
 	
@@ -32,12 +32,14 @@ if(collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-12,o_explosion,
 
 
 if(collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-12,o_spell,0,0)){
+	
 	if(collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-12,o_spell3,0,0)){
 		instance_create_layer(x,y,"Instances",o_explosion);
 	}
 	
 	
 	hp-=damage;
+	
 	if(collision_rectangle(bbox_left,bbox_top-14,bbox_right,bbox_top-7,o_spell,0,0) && !headless){
 		headless=true;	
 	}
