@@ -20,7 +20,7 @@ if(spawned=false){
 if(collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-12,o_explosion,0,0) && exploded=false){
 	hp-=2;
 	exploded=true;
-	alarm[2]=80;
+	alarm[2]=100;
 	if(hp<=0){
 		instance_destroy();	
 		global.points +=100;
@@ -37,8 +37,8 @@ if(collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-12,o_spell,0,0)
 		instance_create_layer(x,y,"Instances",o_explosion);
 	}
 	
-	
 	hp-=damage;
+	
 	
 	if(collision_rectangle(bbox_left,bbox_top-14,bbox_right,bbox_top-7,o_spell,0,0) && !headless){
 		headless=true;	
@@ -48,9 +48,10 @@ if(collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-12,o_spell,0,0)
 	if(hp<=0){
 		instance_destroy();	
 		global.points +=100;
-	} else if (hp=1 && !headless){
+	} else if (hp<=	2 && !headless){
 		sprite_index = spr_enemy_blood;	
-	} else if (headless && !isheadless){
+	} 
+	if (headless && !isheadless){
 		isheadless=true;
 		sprite_index = spr_enemy_headless;	
 		var bullet = collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-13,o_spell,0,0);
@@ -76,6 +77,7 @@ if(collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-13,o_player,0,0
 	player = collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-13,o_player,0,0);
 	with(player){
 		hp-=1;
+		flash=1;
 		damage_advanced_healthbar(20);
 		instance_create_layer(x,y,"blood",o_blood);
 	}

@@ -703,6 +703,14 @@
             }
         },
         {
+            "Key": "9dfb4aff-4fb5-4fcf-8e70-0958da316942",
+            "Value": {
+                "id": "d79354d6-5c85-4eaf-a063-4128b89003bd",
+                "resourcePath": "shaders\\shd_flash\\shd_flash.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "a1eea66b-bbb7-4e2a-83cf-bed692a1f6d7",
             "Value": {
                 "id": "3a7d8902-b4a4-46ab-88c5-4dd77c0b2e44",
@@ -812,6 +820,14 @@
                 "id": "3bd6e73c-7380-43e4-ba88-1981719678b5",
                 "resourcePath": "scripts\\instance_list_random\\instance_list_random.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "be7b6362-8bfd-4436-a5c6-5ad3fc59b39e",
+            "Value": {
+                "id": "152608ba-ace9-41c9-8756-b7207d1ef82c",
+                "resourcePath": "sprites\\s_explosion2\\s_explosion2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

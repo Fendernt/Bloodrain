@@ -19,4 +19,3 @@ draw_rectangle_color(bleft,bbottom-30,bleft+40,btop+30,c1,c1,c1,c1,0);
 //Right section
 draw_rectangle_color(bright,bbottom-30,bright-40,btop+30,c1,c1,c1,c1,0);
 */
-
