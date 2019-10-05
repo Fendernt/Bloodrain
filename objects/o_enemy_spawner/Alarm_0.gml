@@ -1,9 +1,23 @@
 /// @description 
 randomize();
-alarm[0]=respawntime;
+
+if(global.plays<5){
+	alarm[0]=respawntime;	
+} else if(global.plays>=5 && global.plays < 10){
+	alarm[0] = room_speed*4;
+} else if (global.plays>=10){
+	alarm[0] = room_speed*3;	
+}
 
 if(global.paused == true) exit;
 instance_create_layer(random(room_width),random(room_height),"Instances",obj_enemy);
+
+
+
+
+
+
+
 /*
 with(newinst) {
     var tries, done;

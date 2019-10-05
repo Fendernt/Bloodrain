@@ -1,5 +1,5 @@
 
-
+if(!instance_exists(o_player)) exit;
 #region Spawning
 
 if(spawned=false){
@@ -51,7 +51,7 @@ if(collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-12,o_spell,0,0)
 	} else if (hp<=	2 && !headless){
 		sprite_index = spr_enemy_blood;	
 	} 
-	if (headless && !isheadless){
+	if (headless && !isheadless && sprite_index != spr_enemy_blood){
 		isheadless=true;
 		sprite_index = spr_enemy_headless;	
 		var bullet = collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-13,o_spell,0,0);
@@ -77,7 +77,7 @@ if(collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-13,o_player,0,0
 	player = collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-13,o_player,0,0);
 	with(player){
 		hp-=1;
-		flash=1;
+		flash=1.2;
 		damage_advanced_healthbar(20);
 		instance_create_layer(x,y,"blood",o_blood);
 	}

@@ -4,7 +4,7 @@ draw_self();
 
 if(flash > 0)
 {
-	flash -= 0.035;
+	flash -= 0.05;
 	
 	gpu_set_blendmode(bm_add);
 	shader_set(shd_flash);
