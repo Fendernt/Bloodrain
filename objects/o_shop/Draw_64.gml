@@ -1,7 +1,7 @@
 /// @description 
 
 
-draw_text(300,20,"Selected: "+string(selected));
+//draw_text(300,20,"Selected: "+string(selected));
 
 draw_set_alpha(alpha);
 

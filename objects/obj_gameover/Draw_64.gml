@@ -18,7 +18,7 @@ draw_text_outlined(view_wport[0]-10,20,"Total plays: "+string(global.plays),c_wh
 
 
 
-draw_set_halign(fa_left);
-draw_set_valign(fa_left);
+draw_set_halign(fa_middle);
+draw_set_valign(fa_middle);
 draw_text_outlined(room_width/2,room_height-100,"Press R to restart!",c_red,c_black);
 

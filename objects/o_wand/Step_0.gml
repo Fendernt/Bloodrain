@@ -32,7 +32,7 @@ manaRegen=false;
 }
 
 if(global.weapon=0){
-	manacost=10;
+	manacost=global.purplemana;
 	
 	if(mouse_check_button_pressed(mb_left) && mana>=manacost) { 
 		//calculate mana cost
@@ -51,7 +51,7 @@ if(global.weapon=0){
 		}
 	}
 } else if(global.weapon=1){
-	manacost=30;
+	manacost=global.orangemana;
 	
 	if(mouse_check_button_pressed(mb_left) && mana>=manacost) { 
 		//calculate mana cost
@@ -71,7 +71,7 @@ if(global.weapon=0){
 	}
 	
 } else if (global.weapon=2){
-	manacost=40;
+	manacost=global.redmana;
 	
 	if(mouse_check_button_pressed(mb_left) && mana>=manacost) { 
 		//calculate mana cost
@@ -90,7 +90,7 @@ if(global.weapon=0){
 		}
 	}
 } else if (global.weapon=3){
-	manacost=5;
+	manacost=global.bluemana;
 	
 	if(mouse_check_button(mb_left) && mana>=manacost) { 
 		//calculate mana cost

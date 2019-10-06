@@ -34,7 +34,6 @@ if ( window != windowPrev ){
 }
 */
 
-
 ///		Trigger PauseMenu	///
 if ( kPause ){
 	if ( pause ){
@@ -119,6 +118,7 @@ if ( pause ){
 			case 2: // MainMenus
 				instance_activate_all();
 				screen_alpha_set = 0;
+				room_goto(rm_menu);
 
 			break;
 			case 3: // Exit

@@ -22,4 +22,4 @@ global.weapon = 0;
 
 
 
-instance_create_layer(x,y,"HUD",o_mouse);
+instance_create_layer(x,y,"mouse",o_mouse);
