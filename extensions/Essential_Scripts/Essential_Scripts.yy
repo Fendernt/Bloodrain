@@ -1,7 +1,7 @@
 {
     "id": "2f7fef8a-5ae5-4012-bec8-dc5e35d7370c",
     "modelName": "GMExtension",
-    "mvc": "1.0",
+    "mvc": "1.2",
     "name": "Essential_Scripts",
     "IncludedResources": [
         "Scripts\\Essential Scripts\\Drawing\\draw_text_outlined",
@@ -41,6 +41,7 @@
     "copyToTargets": -1,
     "date": "2019-26-24 10:09:50",
     "description": "",
+    "exportToGame": true,
     "extensionName": "",
     "files": [
         
@@ -61,9 +62,12 @@
     "maccompilerflags": "",
     "maclinkerflags": "",
     "macsourcedir": "",
+    "options": null,
+    "optionsFile": "options.json",
     "packageID": "com.wlewis.essentialscripts",
     "productID": "ACBD3CFF4E539AD869A0E8E3B4B022DD",
     "sourcedir": "",
+    "supportedTargets": -1,
     "tvosProps": false,
     "tvosSystemFrameworkEntries": [
         

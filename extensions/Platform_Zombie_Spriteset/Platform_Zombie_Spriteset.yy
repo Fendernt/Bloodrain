@@ -1,7 +1,7 @@
 {
     "id": "967bb9fc-6a4b-4c3f-a0a4-86513f6c0cda",
     "modelName": "GMExtension",
-    "mvc": "1.0",
+    "mvc": "1.2",
     "name": "Platform_Zombie_Spriteset",
     "IncludedResources": [
         "Sprites\\Player\\sp_player_r",
@@ -28,6 +28,7 @@
     "copyToTargets": -1,
     "date": "2019-41-27 09:09:54",
     "description": "",
+    "exportToGame": true,
     "extensionName": "",
     "files": [
         
@@ -48,9 +49,12 @@
     "maccompilerflags": "",
     "maclinkerflags": "",
     "macsourcedir": "",
+    "options": null,
+    "optionsFile": "options.json",
     "packageID": "com.badlydrawncube.platformzombiesprites1",
     "productID": "",
     "sourcedir": "",
+    "supportedTargets": -1,
     "tvosProps": false,
     "tvosSystemFrameworkEntries": [
         

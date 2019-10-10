@@ -13,7 +13,7 @@ image_xscale = image_size;
 image_yscale = image_size;
 
 
-repeat (3) instance_create_layer(x+random_range(-12,12),y+random_range(-12,12),"blood",o_blood_spatter);
+repeat (5) instance_create_layer(x+random_range(-15,15),y+random_range(-15,15),"blood",o_blood_spatter);
 
 
 alarm[1]=room_speed*90;

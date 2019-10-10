@@ -9,3 +9,4 @@ if(place_meeting(x,y,o_mouse)){
 } else{
 	image_index=0;	
 }
+

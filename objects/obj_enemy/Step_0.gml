@@ -3,7 +3,7 @@ if(!instance_exists(o_player)) exit;
 #region Spawning
 
 if(spawned=false){
-	if(grid_place_meeting(self,o_level.grid_) || place_meeting(x,y,o_player)){
+	if(grid_place_meeting(self,o_level.grid_) || place_meeting(x,y,o_player) && abs(x-o_player.x) < 64 && abs(y-o_player.y) < 64){
 			x = random(room_width);
             y = random(room_height);
 	} else {
@@ -18,7 +18,7 @@ if(spawned=false){
 #region Damage
 
 if(collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-12,o_explosion,0,0) && exploded=false){
-	hp-=2;
+	hp-=global.reddmg;
 	exploded=true;
 	alarm[2]=100;
 	if(hp<=0){
@@ -37,7 +37,7 @@ if(collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_top-12,o_spell,0,0)
 		instance_create_layer(x,y,"Instances",o_explosion);
 	}
 	
-	hp-=damage;
+	hp-=global.damage;
 	
 	
 	if(collision_rectangle(bbox_left,bbox_top-14,bbox_right,bbox_top-7,o_spell,0,0) && !headless){

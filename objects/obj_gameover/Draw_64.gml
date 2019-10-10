@@ -20,5 +20,18 @@ draw_text_outlined(view_wport[0]-10,20,"Total plays: "+string(global.plays),c_wh
 
 draw_set_halign(fa_middle);
 draw_set_valign(fa_middle);
-draw_text_outlined(room_width/2,room_height-100,"Press R to restart!",c_red,c_black);
+
+//Restart Button
+
+if(device_mouse_x_to_gui(0) >= view_wport[0]/2-90 and device_mouse_x_to_gui(0) <= view_wport[0]/2+90 and device_mouse_y_to_gui(0) >= view_hport[0]-120 and device_mouse_y_to_gui(0) <= view_hport[0]-60){
+	draw_sprite_ext(s_button,1,room_width/2,room_height-90,1.5,1.5,0,c_white,1);
+	draw_text_outlined(room_width/2,room_height-90,"RESTART",c_red,c_white);
+	if(mouse_check_button_pressed(mb_left)){
+		room_restart();	
+	}
+	
+} else {
+	draw_sprite_ext(s_button,0,room_width/2,room_height-90,1.5,1.5,0,c_white,1);
+	draw_text_outlined(room_width/2,room_height-90,"RESTART",c_red,c_white);	
+}
 

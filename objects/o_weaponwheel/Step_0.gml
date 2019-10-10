@@ -48,17 +48,17 @@ if(visible) {
 if(top){
 	image_index=1;
 	global.weapon = 0;
-	if(instance_exists(obj_enemy)) obj_enemy.damage = global.purpledmg;
+	global.damage= global.purpledmg;
 } else if (right) {
 	image_index=2;
 	global.weapon = 1;
-	if(instance_exists(obj_enemy)) obj_enemy.damage=global.orangedmg;
+	global.damage=global.orangedmg;
 } else if (bottom) {
 	image_index=3;
 	global.weapon = 2;
-	if(instance_exists(obj_enemy)) obj_enemy.damage = global.reddmg;
+	global.damage=global.reddmg;
 } else if (left) {
 	image_index=4
 	global.weapon = 3;
-	if(instance_exists(obj_enemy)) obj_enemy.damage = global.bluedmg;
+	global.damage = global.bluedmg;
 }

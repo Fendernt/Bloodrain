@@ -12,6 +12,17 @@ if(global.plays<5){
 if(global.paused == true) exit;
 instance_create_layer(random(room_width),random(room_height),"Instances",obj_enemy);
 
+if(global.plays>=5){
+	if(percent_chance(20)){
+		instance_create_layer(random(room_width),random(room_height),"Instances",obj_skeleton);
+	}
+}
+if(global.plays >=10){
+	if(percent_chance(15)){
+		instance_create_layer(random(room_width),random(room_height),"Instances",obj_undead);
+	}
+}
+
 
 
 

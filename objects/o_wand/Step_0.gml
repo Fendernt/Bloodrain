@@ -27,19 +27,16 @@ if(global.paused == true) exit;
 
 #region Shooting
 
-if(mana >= 100){
-manaRegen=false;	
-}
 
 if(global.weapon=0){
-	manacost=global.purplemana;
+	global.manacost=global.purplemana;
 	
-	if(mouse_check_button_pressed(mb_left) && mana>=manacost) { 
+	if(mouse_check_button_pressed(mb_left) && mana>=global.manacost) { 
 		//calculate mana cost
-		var _cost = maxmana/manacost;
+		var _cost = global.maxmana/global.manacost;
 		var _manacost = 100/_cost;
 	
-		mana-=manacost;
+		mana-=global.manacost;
 		manaRegen = false;
 		alarm[1] = room_speed*1;
 		damage_advanced_healthbar(_manacost);
@@ -51,14 +48,14 @@ if(global.weapon=0){
 		}
 	}
 } else if(global.weapon=1){
-	manacost=global.orangemana;
+	global.manacost=global.orangemana;
 	
-	if(mouse_check_button_pressed(mb_left) && mana>=manacost) { 
+	if(mouse_check_button_pressed(mb_left) && mana>=global.manacost) { 
 		//calculate mana cost
-		var _cost = maxmana/manacost;
+		var _cost = global.maxmana/global.manacost;
 		var _manacost = 100/_cost;
 	
-		mana-=manacost;
+		mana-=global.manacost;
 		manaRegen = false;
 		alarm[1] = room_speed*1;
 		damage_advanced_healthbar(_manacost);
@@ -71,14 +68,14 @@ if(global.weapon=0){
 	}
 	
 } else if (global.weapon=2){
-	manacost=global.redmana;
+	global.manacost=global.redmana;
 	
-	if(mouse_check_button_pressed(mb_left) && mana>=manacost) { 
+	if(mouse_check_button_pressed(mb_left) && mana>=global.manacost) { 
 		//calculate mana cost
-		var _cost = maxmana/manacost;
+		var _cost = global.maxmana/global.manacost;
 		var _manacost = 100/_cost;
 	
-		mana-=manacost;
+		mana-=global.manacost;
 		manaRegen = false;
 		alarm[1] = room_speed*1;
 		damage_advanced_healthbar(_manacost);
@@ -90,14 +87,14 @@ if(global.weapon=0){
 		}
 	}
 } else if (global.weapon=3){
-	manacost=global.bluemana;
+	global.manacost=global.bluemana;
 	
-	if(mouse_check_button(mb_left) && mana>=manacost) { 
+	if(mouse_check_button(mb_left) && mana>=global.manacost) { 
 		//calculate mana cost
-		var _cost = maxmana/manacost;
+		var _cost = global.maxmana/global.manacost;
 		var _manacost = 100/_cost;
 	
-		mana-=manacost;
+		mana-=global.manacost;
 		manaRegen = false;
 		alarm[1] = room_speed*1;
 		damage_advanced_healthbar(_manacost);

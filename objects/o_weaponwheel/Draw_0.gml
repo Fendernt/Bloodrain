@@ -7,7 +7,6 @@ bright= bbox_right;
 btop = bbox_top;
 c1=c_yellow
 
-
 /*
 //Top section
 draw_rectangle_color(bleft+30,btop,bright-30,btop+40,c1,c1,c1,c1,0);

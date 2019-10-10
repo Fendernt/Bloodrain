@@ -1,7 +1,7 @@
 {
     "id": "148adb39-b076-47ff-88eb-99dbe3bcd95b",
     "modelName": "GMExtension",
-    "mvc": "1.0",
+    "mvc": "1.2",
     "name": "Realistic_Explosions_Pack",
     "IncludedResources": [
         "Sprites\\spr_explosion_1",
@@ -38,6 +38,7 @@
     "copyToTargets": -1,
     "date": "2019-31-03 10:10:18",
     "description": "",
+    "exportToGame": true,
     "extensionName": "",
     "files": [
         
@@ -58,9 +59,12 @@
     "maccompilerflags": "",
     "maclinkerflags": "",
     "macsourcedir": "",
+    "options": null,
+    "optionsFile": "options.json",
     "packageID": "com.jobo.realisticexplosionspack",
     "productID": "",
     "sourcedir": "",
+    "supportedTargets": -1,
     "tvosProps": false,
     "tvosSystemFrameworkEntries": [
         
